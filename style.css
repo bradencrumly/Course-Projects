@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color:rgba(250, 241, 248, 0.8) ;
+    background-color:red ;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
