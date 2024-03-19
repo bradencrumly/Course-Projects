@@ -76,8 +76,7 @@ body {
   gap: 3rem;
   margin: 0 auto;
   align-items: center;
-  padding: 16rem 0;
-  position: relative;
+  padding: 14rem 0;
   font-family: "Playfair Display", serif;
   font-size: 24px;
   line-height: 1.5;
@@ -90,7 +89,10 @@ body {
   position: fixed;
   top: 0;
   padding: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,6 +102,7 @@ body {
 .header img {
   height: 6rem;
   width: 6rem;
+  display: block;
 }
 .header .wrapper {
   max-width: 1440px;
@@ -109,17 +112,21 @@ body {
   margin: 0 auto;
 }
 .header .nav_link {
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 0.15rem;
+  color: rgba(44, 1, 38, 0.5);
+  transition: all 0.2s;
+  padding: 0.5rem;
   text-decoration: none;
-  color: inherit;
 }
 .header .nav_link:hover {
-  color: rgba(44, 1, 38, 0.5);
+  color: rgb(110, 53, 102);
 }
-.header .nav_link.active {
-  color: red;
+.header .nav_link:active {
+  background: rgba(250, 241, 248, 0.8);
+}
+.header .active {
+  border-bottom: 2px solid rgb(110, 53, 102);
+  font-weight: 500;
+  color: rgb(110, 53, 102);
 }
 
 .section {
@@ -130,6 +137,7 @@ body {
   background-color: #ffffff;
   border-radius: 0.75rem;
   box-shadow: 0 4px 3rem rgba(44, 1, 38, 0.1);
+  min-height: 80vh;
 }
 
 @media (max-width: 1440px) {
