@@ -3,33 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Inspire PM Salon</title>
+
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <script defer src="script.js"></script>
 
 </head>
 <body>
-    <nav> 
-        <img src="img/inspirelogo.png" alt="Inspire"> 
-        <div class="wrapper">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Service Menu</a>
-            <a href="">Gallery</a>
-            <a href="">Testimonials</a>
-            <a href="">Meet the Team</a>
-        </div>
-    </nav>
 
-    <section>
+    <div class="header">
+        <img src="img/inspirelogo.png" alt="Inspire"> 
+        <nav>    
+            <ol class="wrapper">
+                <li>
+                    <a href="#home" class=" nav_link active">Home</a>
+                </li>
+                <li>
+                    <a href="#aboutus" class="nav_link ">About Us</a>
+                </li>
+                <li>
+                    <a href="#servicemenu" class="nav_link ">Service Menu</a>
+                </li>
+                <li>
+                    <a href="#gallery" class="nav_link ">Gallery</a>
+                </li>
+                <li>
+                    <a href="#testimonials" class="nav_link ">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#meetheteam" class="nav_link ">Meet the Team</a>
+                </li>
+                <li>
+                    <a href="#contactus" class="nav_link ">Contact Us</a>
+                </li>
+            </ol>
+        </nav>
+    </div>
+    <section id="home" class="section">
         <h1>Inspire PM Salon</h1>
         <p>Let's create some magic!</p>
         <button>Book Now!</button>
     </section>
 
-    <section>
+    <section id="aboutus" class="section">
         <h2>About Us</h2>
         <p>Inspire is a Paul Mitchell Focus salon located in Norman, Oklahoma. The salon offers various services such as, Custom Colors, Procession Haircutting, Bridal Events, Styling, B3 Treatments, Brazilian Blowout, Makeup, Waxing, Lashes and a variety of Aesthetics services. Inspire provides top of the line take home products with brands such as, Paul Mitchell, Leaf + Flower and BrazilIan Blowout to insure every guest receives the same results every single day. </p>
 
@@ -40,7 +62,23 @@
         <p>Inspire Paul Mitchell Salon in Norman wishes to house a positive, fun-loving salon home for talented, aspiring salon professionals. We want our salon to provide an environment where they have the ability to learn, create and grow. Providing quality hair color & cutting in Norman,Oklahoma.</p>
     </section>
 
-    <section>
+    <section id="servicemenu" class="section">
+        <h2>Service Menu</h2>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+    </section>
+
+    <section id="testimonials" class="section">
+        <h2>Testimonials</h2>
+    </section>
+
+    <section id="meetheteam" class="section">
+        <h2>Meet the Team</h2>
+    </section>
+    
+    <section id="contactus" class="section">
         <h2>Contact Us</h2>
         <p>Contact Us or Visit
             Feel free to reach out to book your appointment or stop by our location. 
@@ -57,5 +95,6 @@
         
             After Hours by Appointment Only</p>
     </section>
+
 </body>
 </html>

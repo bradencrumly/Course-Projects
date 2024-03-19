@@ -14,6 +14,9 @@ $shadow-color: rgb(44, 1, 38,.1);
     box-shadow: 0 4px $size $shadow-color;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color:$primary-color-100 ;
@@ -27,15 +30,16 @@ body{
     font-family: $body-font;
     font-size: $body-size;
     line-height: 1.5;
+    color: $primary-color-400;
 }
 
-nav{
+.header{
     width: 100vw;
     background-color: $base-color;
     position: fixed;
     top: 0;
     padding: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,9 +59,25 @@ nav{
         margin: 0 auto;
     }
 
+    .nav_link{
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: .15rem;
+        text-decoration: none;
+        color: inherit;
+
+            &:hover{
+                color: rgb(44, 1, 38, .5);
+            }
+
+        
+            &.active{
+                color: red;
+            }
+    }
 }
 
-section{
+.section{
     max-width: 1440px;
     width: 100vw;
     padding: 1.5rem;
@@ -69,7 +89,7 @@ section{
 
 @media (max-width: 1440px) {
 
-    section {
+    .section {
         max-width: calc(100vw - 3rem); 
     }
 }

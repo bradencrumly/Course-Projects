@@ -65,6 +65,10 @@ input, textarea, select {
   text-rendering: optimizeLegibility;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgba(250, 241, 248, 0.8);
   display: flex;
@@ -77,34 +81,48 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   line-height: 1.5;
+  color: rgb(44, 1, 38);
 }
 
-nav {
+.header {
   width: 100vw;
   background-color: #ffffff;
   position: fixed;
   top: 0;
   padding: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
   box-shadow: 0 4px 0.5rem rgba(44, 1, 38, 0.1);
 }
-nav img {
+.header img {
   height: 6rem;
   width: 6rem;
 }
-nav .wrapper {
+.header .wrapper {
   max-width: 1440px;
   display: flex;
   gap: 1rem;
   align-items: center;
   margin: 0 auto;
 }
+.header .nav_link {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  color: inherit;
+}
+.header .nav_link:hover {
+  color: rgba(44, 1, 38, 0.5);
+}
+.header .nav_link.active {
+  color: red;
+}
 
-section {
+.section {
   max-width: 1440px;
   width: 100vw;
   padding: 1.5rem;
@@ -115,7 +133,7 @@ section {
 }
 
 @media (max-width: 1440px) {
-  section {
+  .section {
     max-width: calc(100vw - 3rem);
   }
 }
