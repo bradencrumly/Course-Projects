@@ -163,6 +163,13 @@ body {
   letter-spacing: 0.9rem;
 }
 
+.sub_head {
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.15rem;
+  line-height: 1.25rem;
+}
+
 .center {
   display: flex;
   align-items: center;
@@ -321,8 +328,20 @@ body {
   grid-row: 3; /* Row 3 */
 }
 
+.serv_img {
+  width: 45%;
+  height: auto;
+}
+
 .container {
-  padding: 3rem;
+  width: 55%;
+  padding: 1.5rem;
+  font-size: 0.75rem;
+}
+.container ul {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
 }
 
 .abt_img {
